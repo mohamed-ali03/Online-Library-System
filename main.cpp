@@ -1,14 +1,18 @@
 #include "main.h"
 
-int choice;
-bool Exit = false;
-User_t head ;
+
+User_t *head = new User_t;
 
 int main()
 {
+    int choice;
+    bool Exit = false;
     while(!Exit){
         cout<<start_menu;
-        cin>>choice;
+        if (!(cin >> choice) || choice <= 0) {
+            throw invalid_argument("Invalid Choice! Choice must be a positive number.");
+        }
+        if(choice)
         switch(choice){
             case 1 :
                 Book_Menu();
@@ -24,6 +28,7 @@ int main()
                 break;
         }
     }
+    freeHeap(head);
     return 0;
 }
 
@@ -33,25 +38,24 @@ void Book_Menu(){
     cout<< "you are in book menu"<<endl;
 }
 
-
-
-
 void User_Menu(){
     int choiceUser ;
     bool ExitUser = false;
     while(!ExitUser){
         cout<<user_menu;
-        cin>>choiceUser;
+        if (!(cin >> choiceUser) || choiceUser <= 0) {
+            throw invalid_argument("Invalid Choice! Choice must be a positive number.");
+        }
 
         switch(choiceUser){
             case 1 :
-                CreateNewUser(&head);
+                CreateNewUser(head);
                 break;
             case 2 :
-                SearchForUser(&head);
+                SearchForUser(head);
                 break;
             case 3 :
-                DisplayAllUsers(&head);
+                DisplayAllUsers(head);
                 break;
             case 4 :
                 ExitUser = true;
@@ -63,5 +67,12 @@ void User_Menu(){
     }
 }
 
-
+void freeHeap(User_t* head) {
+    User_t* temp;
+    while (head) {
+        temp = head;
+        head = head->next;
+        delete temp; // Use delete instead of free
+    }
+}
 

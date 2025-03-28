@@ -10,6 +10,6 @@ string user_menu = "USERS MENU\n1- Create a USER and add it to the list\n2- Sear
 //===============================Function Declaration===========================
 void Book_Menu();
 void User_Menu();
-
+void freeHeap(User_t *head);
 
 #endif // MAIN_H_INCLUDED

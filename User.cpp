@@ -180,13 +180,13 @@ void CreateNewUser(User_t *head){
         head->next = NULL;
     }
     else{
-        User_t temp;
-        cin>>temp.user;
-        temp.next = NULL;
+        User_t *temp = new User_t;
+        cin>>temp->user;
+        temp->next = NULL;
         while(trav->next){
             trav = trav->next;
         }
-        trav->next = &temp;
+        trav->next = temp;
     }
 }
 
@@ -195,7 +195,9 @@ void SearchForUser(User_t *head){
     bool ExitSearch= false;
     while(!ExitSearch){
         cout<<search_menu;
-        cin>>choiceSearch;
+        if (!(cin >> choiceSearch) || choiceSearch <= 0) {
+            throw invalid_argument("Invalid Choice! Choice must be a positive number.");
+        }
 
         switch(choiceSearch){
             case 1 :{
@@ -208,7 +210,9 @@ void SearchForUser(User_t *head){
             case 2 :{
                 int id ;
                 cout<<"Enter ID : ";
-                cin>>id;
+                if (!(cin >> id) || id <= 0) {
+                    throw invalid_argument("Invalid id! id must be a positive number.");
+                }
                 SearchID(id,head);
                 break;
             }

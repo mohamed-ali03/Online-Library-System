@@ -3,11 +3,7 @@
 #define USER_H_INCLUDED
 
 //======================================Includies=====================================
-#include <iostream>
-#include <string>
-#include <stdexcept>
-
-using namespace std;
+#include "StdLibrary.h"
 //======================================Class Declaration =====================================
 class User{
 private:
