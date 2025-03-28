@@ -60,20 +60,69 @@ g++ main.cpp User.cpp -o library_system
 
 ## Example Session
 ```
-Select one of the following choices:
-1- User Menu
-2- Exit
+Select one of the following choices
+1- Book Menu
+2- User Menu
+3- Exit
+2
 
-> 1
 USERS MENU
-1- Register a new user
+1- Create a USER and add it to the list
 2- Search for a user
-3- List all users
-4- Back to the main menu
+3- Display all users
+4- Back to the main
+1
 
-> 1
-Enter your name: John Doe
-Enter your age: 25
-Enter your email: john@example.com
-Enter your password: password123
+Enter your name : mohamed
+Enter your age : 21
+Enter your email : mohamed@gmail.com
+Enter your password : mohamed
+
+USERS MENU
+1- Create a USER and add it to the list
+2- Search for a user
+3- Display all users
+4- Back to the main
+1
+
+Enter your name : ahmed
+Enter your age : 23
+Enter your email : ahmed@gmail.com
+Enter your password : ahmed
+
+USERS MENU
+1- Create a USER and add it to the list
+2- Search for a user
+3- Display all users
+4- Back to the main
+3
+
+Name : mohamed  ||  Age : 21  ||  ID : 1  ||  Email : mohamed@gmail.com
+Name : ahmed  ||  Age : 23  ||  ID : 2  ||  Email : ahmed@gmail.com
+
+USERS MENU
+1- Create a USER and add it to the list
+2- Search for a user
+3- Display all users
+4- Back to the main
+2
+
+SEARCH FOR A USER
+1- Search by name
+2- Search by id
+3- Return to users Menu
+2
+
+Enter ID : 2
+Name : ahmed  ||  Age : 23  ||  ID : 2  ||  Email : ahmed@gmail.com
+
+SEARCH FOR A USER
+1- Search by name
+2- Search by id
+3- Return to users Menu
+2
+
+Enter ID : 1
+Name : mohamed  ||  Age : 21  ||  ID : 1  ||  Email : mohamed@gmail.com
+
 ```
