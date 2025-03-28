@@ -125,4 +125,22 @@ SEARCH FOR A USER
 Enter ID : 1
 Name : mohamed  ||  Age : 21  ||  ID : 1  ||  Email : mohamed@gmail.com
 
+SEARCH FOR A USER
+1- Search by name
+2- Search by id
+3- Return to users Menu
+1
+
+Enter Name : ahmed
+Name : ahmed  ||  Age : 23  ||  ID : 2  ||  Email : ahmed@gmail.com
+
+SEARCH FOR A USER
+1- Search by name
+2- Search by id
+3- Return to users Menu
+1
+
+Enter Name : mohamed
+Name : mohamed  ||  Age : 21  ||  ID : 1  ||  Email : mohamed@gmail.com
+
 ```
