@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1743124749 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/main.cpp
+	"main.h"
+
+1743124913 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/User.cpp
+	"User.h"
+
+1743124913 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/User.h
+	<iostream>
+	<string>
+	<stdexcept>
+
+1743124257 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/main.h
+	"User.h"
+
