@@ -56,7 +56,7 @@ g++ main.cpp User.cpp -o library_system
 
 ### **Main Program (`main.cpp`)**
 - Provides a command-line interface for user interactions.
-- Calls `Main_Menu()` to facilitate navigation between modules.
+- Calls `Start_Menu()` to facilitate navigation between modules.
 
 ## Example Session
 ```
