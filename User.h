@@ -7,7 +7,7 @@
 //======================================Class Declaration =====================================
 class User{
 private:
-           string name;
+           string name = "unknown";
            int age;
            int id;
            string password;
@@ -30,6 +30,7 @@ public:
           void setId(int );
           int getId();
           void Display ();
+          bool operator==(User&);
           friend ostream &operator<<(ostream &, const User &);
           friend istream &operator>>( istream & , User &);
 };
@@ -40,9 +41,11 @@ typedef struct user{
 }User_t;
 
 void CreateNewUser(User_t *);
-void SearchForUser(User_t *);
-    void SearchName(string ,User_t *);
-    void SearchID(int ,User_t *);
+User_t* SearchForUser(User_t *,string);
+    User_t* SearchName(string ,User_t *);
+    User_t* SearchID(int ,User_t *);
+void ModifyUserData(User_t*,User_t*);
+void DeleteUser(User_t *, int );
 void DisplayAllUsers(User_t *);
 
 

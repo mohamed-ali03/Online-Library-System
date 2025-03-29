@@ -1,20 +1,24 @@
 # depslib dependency file v1.0
-1743153802 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/main.cpp
+1743253627 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/main.cpp
 	"main.h"
 
-1743153798 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/User.cpp
+1743256048 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/User.cpp
 	"User.h"
 
-1743153460 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/User.h
+1743259448 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/User.h
 	"StdLibrary.h"
 
-1743127332 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/main.h
-	"User.h"
+1743259410 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/main.h
+	"Book.h"
 
-1743153167 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/Book.cpp
+1743259309 source:/media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/Book.cpp
+	"Book.h"
 
-1743153393 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/StdLibrary.h
+1743253358 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/StdLibrary.h
 	<iostream>
 	<string>
 	<stdexcept>
+
+1743258423 /media/mo/New Volume/c++/Projects/Online Library System/OnlineLibrarySystem/Book.h
+	"User.h"
 
